@@ -15,13 +15,6 @@ Tablero institucional para el seguimiento de la implementación del Expediente C
 - Actividades pendientes de programar.
 - Diseño responsivo y colores institucionales.
 
-## Actualizar datos
-
-1. Sustituye `data/cronograma.xlsx` y `data/unidades.xlsx`.
-2. Ejecuta `python build_data.py`.
-3. Inicia el sitio con `python -m http.server 8000`.
-4. Abre `http://localhost:8000`.
-
 ## GitHub Pages
 
 Los archivos JSON generados son estáticos y pueden publicarse con el resto del proyecto.
