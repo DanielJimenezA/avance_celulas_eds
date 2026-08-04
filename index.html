@@ -1,0 +1,35 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Seguimiento ECE · Versión 3.5</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/gantt.css"><link rel="stylesheet" href="css/theme.css"></head><body><header><div class="header-inner"><img src="assets/logoimssbienestar.png" alt="IMSS-Bienestar"><div><h1>Seguimiento de implementación del ECE <span class="version-badge">V3.5</span></h1><p>Última actualización: <strong id="lastUpdate">—</strong></p></div></div></header><main><section class="filters card"><input id="searchInput" placeholder="Buscar actividad, entidad o comentario"><select id="cellFilter"></select><select id="entityFilter"></select><select id="stageFilter"></select><select id="statusFilter"><option value="">Todos los estados</option><option value="green">En tiempo</option><option value="orange">Retraso de 1 a 7 días</option><option value="red">Retraso mayor a 7 días</option><option value="pending">Pendiente de programar</option></select><input id="referenceDate" type="date"><button id="resetButton">Restablecer</button><button id="downloadButton">Descargar CSV</button></section><section id="kpis" class="kpi-grid"></section><section class="card gantt-card">
+  <div class="section-heading">
+    <div>
+      <h2>Cronograma de implementación</h2>
+      <p>La escala temporal puede consultarse por meses, semanas o días. La línea vino indica la fecha de corte.</p>
+    </div>
+  </div>
+
+  <div class="gantt-toolbar" aria-label="Herramientas del cronograma">
+    <div id="ganttZoomControls" class="gantt-toolbar-group" aria-label="Nivel de zoom">
+      <span class="gantt-toolbar-label">Zoom:</span>
+      <button type="button" class="gantt-zoom-button" data-gantt-zoom="month">Meses</button>
+      <button type="button" class="gantt-zoom-button is-active" data-gantt-zoom="week">Semanas</button>
+      <button type="button" class="gantt-zoom-button" data-gantt-zoom="day">Días</button>
+    </div>
+
+    <div class="gantt-toolbar-group" aria-label="Navegación temporal">
+      <button id="ganttStart" type="button" class="gantt-tool-button" aria-label="Ir al inicio del cronograma">⇤ Inicio</button><button id="ganttScrollLeft" type="button" class="gantt-tool-button" aria-label="Desplazar cronograma a la izquierda">← Anterior</button>
+      <button id="ganttToday" type="button" class="gantt-tool-button">Fecha de corte</button>
+      <button id="ganttScrollRight" type="button" class="gantt-tool-button" aria-label="Desplazar cronograma a la derecha">Siguiente →</button><button id="ganttEnd" type="button" class="gantt-tool-button" aria-label="Ir al final del cronograma">Fin ⇥</button>
+    </div>
+
+    <div class="gantt-keyboard-help">
+      <kbd>←</kbd><kbd>→</kbd>
+      Navegar · Mayús + flecha para avanzar más · También puedes arrastrar el cronograma
+    </div>
+  </div>
+
+  <div
+    id="gantt"
+    class="gantt-wrap"
+    tabindex="0"
+    aria-label="Cronograma desplazable horizontalmente. Usa las flechas izquierda y derecha o arrastra con el mouse."
+  ></div>
+</section><section class="card comments-card"><div class="section-heading"><div><h2>Comentarios de seguimiento</h2><p>Observaciones de las actividades visibles.</p></div><span id="commentsCount" class="badge">0 comentarios</span></div><div id="commentsList" class="comments-list"></div></section><section class="ranking-grid"><article class="card ranking-card ranking-prioritario"><h2>Top 5 de entidades con seguimiento prioritario</h2><div id="worstRanking"></div></article><article class="card ranking-card ranking-excelencia"><h2>Top 5 de entidades con mejor enfoque institucional</h2><div id="bestRanking"></div></article></section><section class="card"><div class="section-heading"><div><h2>Detalle de actividades</h2></div></div><div class="table-wrap"><table><thead><tr><th>Célula</th><th>Entidad</th><th>Etapa</th><th>Actividad</th><th>Inicio</th><th>Fin</th><th>Avance</th><th>Unidades</th><th>Retraso</th><th>Estado</th></tr></thead><tbody id="activityTableBody"></tbody></table></div></section></main><script type="module" src="js/app.js"></script></body></html>
