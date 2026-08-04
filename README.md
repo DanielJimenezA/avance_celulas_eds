@@ -1,6 +1,6 @@
-# Avance de células — Versión 3.0 profesional
+# Avance de células — Versión 3.0 
 
-Dashboard institucional para el seguimiento de la implementación del Expediente Clínico Electrónico.
+Tablero institucional para el seguimiento de la implementación del Expediente Clínico Electrónico.
 
 ## Gantt profesional
 
