@@ -1,4 +1,4 @@
-# Avance de células — Versión 3.0 
+# Avance de células
 
 Tablero institucional para el seguimiento de la implementación del Expediente Clínico Electrónico.
 
