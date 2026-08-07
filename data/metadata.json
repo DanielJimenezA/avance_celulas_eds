@@ -1,20 +1,20 @@
 {
-  "ultima_actualizacion": "05/08/2026 19:07:57",
-  "ultima_actualizacion_iso": "2026-08-05T19:07:57-06:00",
+  "ultima_actualizacion": "06/08/2026 18:43:56",
+  "ultima_actualizacion_iso": "2026-08-06T18:43:56-06:00",
   "fuentes": [
     "data/cronograma.xlsx",
     "data/unidades.xlsx"
   ],
   "datos_ficticios": false,
-  "total_celulas": 10,
-  "total_entidades": 48,
+  "total_celulas": 12,
+  "total_entidades": 47,
   "total_unidades": 613,
-  "total_actividades": 818,
-  "actividades_concluidas": 130,
-  "actividades_retrasadas": 421,
-  "actividades_criticas": 354,
-  "actividades_pendientes_programar": 13,
-  "coincidencias_correctas": 35,
-  "sin_coincidencia": 15,
+  "total_actividades": 801,
+  "actividades_concluidas": 132,
+  "actividades_retrasadas": 275,
+  "actividades_criticas": 233,
+  "actividades_pendientes_programar": 34,
+  "coincidencias_correctas": 34,
+  "sin_coincidencia": 13,
   "nota_busqueda": "La selección se realiza primero por célula y después por distribución. Las columnas ENTIDAD y NOMBRE DE LA UNIDAD no participan en la correspondencia."
 }
