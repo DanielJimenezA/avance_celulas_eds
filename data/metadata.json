@@ -1,6 +1,6 @@
 {
-  "ultima_actualizacion": "10/08/2026 18:43:16",
-  "ultima_actualizacion_iso": "2026-08-10T18:43:16-06:00",
+  "ultima_actualizacion": "13/08/2026 14:16:21",
+  "ultima_actualizacion_iso": "2026-08-13T14:16:21-06:00",
   "fuentes": [
     "data/cronograma.xlsx",
     "data/unidades.xlsx"
@@ -10,9 +10,9 @@
   "total_entidades": 36,
   "total_unidades": 613,
   "total_actividades": 801,
-  "actividades_concluidas": 174,
-  "actividades_retrasadas": 251,
-  "actividades_criticas": 207,
+  "actividades_concluidas": 191,
+  "actividades_retrasadas": 245,
+  "actividades_criticas": 202,
   "actividades_pendientes_programar": 68,
   "coincidencias_correctas": 34,
   "sin_coincidencia": 2,
